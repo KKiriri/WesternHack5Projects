@@ -27,8 +27,6 @@ export const updateActivePage = (page) => ({
   page
 })
 
-
-
 const stateTemplate = {
   grids: [
 

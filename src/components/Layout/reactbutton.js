@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Tables from './ResultTable';
 
 import green from '@material-ui/core/colors/green';
-import TextF from './textf';
+
 import App from '../../App';
 
 import { updateActivePage } from './../../reducer';
@@ -59,7 +59,7 @@ const styles = theme => ({
 
 class FloatingActionButtonZoom extends React.Component {
   state = {
-    "value": 0,
+    value: 0,
   };
 
   handleChange = (event, value) => {
@@ -101,8 +101,8 @@ class FloatingActionButtonZoom extends React.Component {
           onChangeIndex={this.handleChangeIndex}
         >
           <TabContainer dir={theme.direction}>
-            <TextF/>
           </TabContainer>
+
           <TabContainer dir={theme.direction}>
             <App />
           </TabContainer>
@@ -110,7 +110,6 @@ class FloatingActionButtonZoom extends React.Component {
           <TabContainer dir={theme.direction}>
           <Tables/>
           </TabContainer>
-
         </SwipeableViews>
 
       </div>
